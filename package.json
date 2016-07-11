@@ -1,0 +1,19 @@
+{
+  "name": "gae-webpack-material-ui-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotetsuk/gae-webpack-material-ui-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sotetsuk/gae-webpack-material-ui-example/issues"
+  },
+  "homepage": "https://github.com/sotetsuk/gae-webpack-material-ui-example#readme"
+}
