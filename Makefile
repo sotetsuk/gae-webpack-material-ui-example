@@ -1,3 +1,5 @@
+.PHONY: build
+
 # serve dev server
 # if webpack and webpack-dev-server is not installed, do
 #   $ npm install -g webpack
@@ -7,4 +9,7 @@
 #   http://localhost:8080/webpack-dev-server/
 # 
 serve:
-	webpack-dev-server --progress --color
+	webpack-dev-server --progress --inline --colors
+
+build:
+	webpack --progress --colors

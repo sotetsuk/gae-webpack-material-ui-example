@@ -6,10 +6,10 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 ReactDOM.render(
   <div>
-    <h1>Hello, world</h1>
+    <h1>Hello, Material-ui</h1>
     <MuiThemeProvider>
       <RaisedButton label="Default" />
     </MuiThemeProvider>
   </div>,
-  document.getElementById('content')
+  document.getElementById('app')
 );
