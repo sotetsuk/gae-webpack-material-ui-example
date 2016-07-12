@@ -1,15 +1,7 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import {render} from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import Main from './Main';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RaisedButton from 'material-ui/RaisedButton';
-
-ReactDOM.render(
-  <div>
-    <h1>Hello, Material-ui</h1>
-    <MuiThemeProvider>
-      <RaisedButton label="Default" />
-    </MuiThemeProvider>
-  </div>,
-  document.getElementById('app')
-);
+injectTapEventPlugin();
+render(<Main />, document.getElementById('app'));
