@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import Dialog from 'material-ui/Dialog';
-import {deepOrange500} from 'material-ui/styles/colors';
+import { deepOrange500 } from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
+import { Table, TableBody, TableHeader,
+  TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
 
 const styles = {
   container: {
@@ -79,34 +80,34 @@ class Main extends Component {
     const standardActions = (
       <FlatButton
         label="Ok"
-        primary={true}
+        primary
         onTouchTap={this.handleRequestClose}
       />
     );
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-      <div style={{ mergin: 0 }}>
-        <AppBarExampleIcon />
-        <div style={styles.container}>
-          <Dialog
-            open={this.state.open}
-            title="Super Secret Password"
-            actions={standardActions}
-            onRequestClose={this.handleRequestClose}
-          >
+        <div style={{ mergin: 0 }}>
+          <AppBarExampleIcon />
+          <div style={styles.container}>
+            <Dialog
+              open={this.state.open}
+              title="Super Secret Password"
+              actions={standardActions}
+              onRequestClose={this.handleRequestClose}
+            >
             1-2-3-4-5
-          </Dialog>
-          <h1>Button example</h1>
-          <RaisedButton
-            label="Super Secret Password"
-            secondary={true}
-            onTouchTap={this.handleTouchTap}
-          />
-          <h1>Table Example</h1>
-          <TableExampleSimple />
+            </Dialog>
+            <h1>Button example</h1>
+            <RaisedButton
+              label="Super Secret Password"
+              secondary
+              onTouchTap={this.handleTouchTap}
+            />
+            <h1>Table Example</h1>
+            <TableExampleSimple />
+          </div>
         </div>
-      </div>
       </MuiThemeProvider>
     );
   }
