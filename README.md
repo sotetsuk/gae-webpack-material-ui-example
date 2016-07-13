@@ -2,13 +2,13 @@
 
 ## How to use
 
-To serve local development server 
+To serve local development server
 
 ```sh
 $ make serve
 ```
 
-To build 
+To build
 
 ```sh
 $ make build
@@ -28,6 +28,15 @@ You must install ```Linter``` and ```Linter-ESLint``` by following commands:
 - ```apm install linter-eslint```
 
 ```.eslintrc``` and ```package.json``` already include other requirements.
+
+### atom-ternjs
+
+Install atom-ternjs by:
+
+- ```apm install atom-ternjs```
+
+```.tern-project``` is a configure file.
+
 
 # References
 - [Material-UI](http://www.material-ui.com/)
